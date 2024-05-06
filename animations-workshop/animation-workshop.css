@@ -1,0 +1,16 @@
+/*css for animation-workshop.html*/
+body{
+    display: flex;
+    justify-content: center;
+}
+.sprite{
+    width: 500px;
+    height: 500px;
+    background: url(images/doster-logo-animation-01.png) 0 0 no-repeat;
+    animation: play 2.2s steps(23) infinite;
+    transform: scale(.7);
+}
+@keyframes play{
+    0%{background-position: 0px;}
+    100%{background-position: -11500px;}
+}
