@@ -1,0 +1,474 @@
+/*css dokument*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+background: #011F26;
+color: #fff;
+}
+
+/*
+#header{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+*/
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    /*Headerbaren*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #04ADBF;
+    border-radius: 20px;
+
+}
+
+.logo{
+    width: 100px;
+    padding-left: 20px;
+}
+
+nav ul li{
+    /*headerbaren afstand imellem text*/
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    position: relative;
+    
+}
+
+nav ul li a{
+    /*header barens text farve, størrelse og placering*/
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 0px;
+}
+
+nav ul li a::after{
+    /* hover effekt på menubaren (farve) */
+content: '';
+width: 0;
+height: 3px;
+background: #fff;
+position: absolute;
+left: 0;
+bottom: -5px;
+transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+     /* hover effekt på menubaren (pop up) */
+    width: 100%;
+
+}
+.header-text{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+   
+}
+.header-text h1{
+    font-size: 35px;
+    font-family: 'Roboto';
+    margin: auto;
+}
+.header-text h2{
+    font-size: 30px;
+    font-family: 'Roboto';
+    color: #fff;
+    margin-left: auto;
+}
+
+/* Billede af pcskærm forside */
+.header-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container2{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.forside-col-1{
+    flex: 1;
+    padding-left: 20px;
+}
+
+.forside-col-2{
+    flex: 1;
+}
+
+.forside-col-2 img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Styling for h1 */
+.forside-col-1 h1{
+    background-color: #04ADBF;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Styling for p */
+.forside-col-1 p{
+    margin-top: 10px;
+}
+
+/*-----------------om mig--------------------*/
+#about{
+    padding: 80px 0;
+    color: #fff;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*Billede af mig*/
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    margin-left: auto;
+}
+/*text felt om mig*/
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 10px 0 10px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #04ADBF;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+/*hover*/
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-contents ul li{
+list-style: none;
+margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #04ADBF;
+    font-size: 15px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* ---------------------------------services----------------------------------*/
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #04ADBF;
+    padding: 30px;
+    font-size: 17px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div h1{
+    color: #011F26;
+}
+.services-list div i{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.services-list div i h2{
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.services-list div a{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #B4CBD9;
+    transform: translateY(-10px);
+}
+
+/*------------------------Udvalgte projekter-------------------------------*/
+#projekter{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;   
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#04ADBF);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    transition: height 0.5s;
+
+}
+.layer h3{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #04ADBF;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.02);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #04ADBF;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: #04ADBF;
+}
+/*-------------------------------kontakt ---------------------------*/
+/*--kontakt left--*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #04ADBF;
+    font-size: 17px;
+    margin-right: 10px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 15px;
+    color: #fff;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #04ADBF;
+    transform: translateY(-2px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #04ADBF;
+}
+/*--kontakt right--*/
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #B4CBD9;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 55px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/*----------------------------------------Footer-------------------------------------*/
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: #04ADBF;
+    margin: 0;
+    font-weight: 300;
+}
+.copyright i{
+    color: #B4CBD9;
+}
+
+/*---------------------------------Responsiv css-------------------------------*/
+/*---- luk og åben ikoner (burgermenu) forsvinder på skærme større end 600px---*/
+nav .fa-solid{
+    display: none;
+}
+/*responsivt, så alt under 600px følger css nedenunder*/
+@media only screen and (max-width: 600px){
+    .text-box-plakat{
+        flex-basis: 100%;
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+       font-size: 30px; 
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    /*blå menubar (boxen)*/
+    nav ul{
+        background: #04ADBF;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        border-radius: 10px 0 0 10px;
+        transition: right 0.5s;
+    }
+    /*Text i menubaren*/
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    /*luk og åben (burgermenu og kryds) placering og størrelse*/
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    /*------resposiv om mig------*/
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    /*------resposnsiv "færdigheder" ------- */
+    .tab-links{
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    /*-------- responsiv kontakt--------*/
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 13px;
+    }
+}

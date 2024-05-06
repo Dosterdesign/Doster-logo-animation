@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/74b665006c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- ------------------------------------Header/menubar---------------------- -->
+    <div id="header">
+        <div class=container> 
+            <nav>
+                <img src="images_p3/dosterlogo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Hjem</a></li>
+                    <li><a href="#about">Om Mig</a></li>
+                    <li><a href="#services">Design</a></li>
+                    <li><a href="#projekter">Projekter</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!---->
+            <!--plakat og billede af pc med tekst-->
+            <div class="header-text">
+                <div class="container2">
+                    <div class="row">
+                        <div class="forside-col-1">
+                            <img src="images_p3/pcskaerm.png" alt="pcskaerm">
+                        </div>
+                        <div class="forside-col-2">
+                            <h1>Står du og mangler en Multimedie Designer? Så <u>kontakt</u> mig!</h1>
+                            <p>Jeg kan være behjælpelig med alt fra kodning i HTML5 og CSS til veludførte reklame kampanger. 
+                                <br>Et godt design kommer med kreativitet og erfaring. Med et kreativt flair og æstisk sans kan jeg skabe 
+                                et visuelt brand som skiller sig ud fra mængden og passer lige til jeres behov.<br> Jeg holder mig løbende opdateret
+                                 på de aktuelle design trends og sørger for at matche dem med brugerens behov. <br>Med en åben dialog og godt samarbejde
+                                 kan vi sammen skabe det perfekte produkt for jer og jeres kunder.<br> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- ---------------------- om mig------------------------------------------ -->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images_p3/student.jpg" alt="student">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Om mig</h1>
+                    <p>Mit navn er Frederik og jeg er en 22-årig eventyrlysten person, der nu kalder
+                        Odense for mit hjem. Oprindeligt kommer jeg fra den solbeskinnede ø Bornholm,
+                        hvor jeg er født og opvokset. 
+                        
+                        Efter endt uddannelse som eux-klejnsmed tog jeg mig et velfortjent sabbatår,
+                        hvor jeg foretog en spændende rejse til Sydøstasien og Australien. Denne
+                        oplevelse har udvidet min horisont og givet mig en dybere forståelse for
+                        forskellige kulturer og samfund. Jeg elsker at udforske verden og få indblik i,
+                        hvordan mennesker lever på tværs af kloden. Jeg er overbevist om, at med de
+                        erfaringer jeg har tilegnet mig fra mine rejser, vil gøre mig til en mere åben og
+                        rummelig medarbejder.
+                        Ud over mine store eventyr i udlandet har jeg også haft fornøjelsen af at udforske
+                        nogle af de forskellige hjørner af Europa i kortere ture. Hvert sted jeg har besøgt,
+                        har givet mig mulighed for at lære noget nyt og få inspiration til at se verden på
+                        ny.
+                        Jeg begyndte min videregående studierejse på maskinmesteruddannelsen på
+                        SIMAC her på Fyn, men indså hurtigt at dette ikke var den rigtige retning for
+                        mig. Det var under dette studie, at jeg fandt en særlig interesse i Human
+                        Ressource Management (HRM). Denne fascination for menneskets tankegang og
+                        interaktioner med hinanden har ledt mig til den erkendelse, at min sande passion
+                        ligger inden for dette område. 
+                        
+                        Derudover har jeg altid haft en interesse i at redigere billeder og arbejde med computeren. 
+                        Derfor er jeg nu til at finde på Multimedie designer uddannelsen på UCL I Odense.
+                    </p>
+                    <!-- ---------------------------- erfaringsbjælke -------------- -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Færdigheder</p>
+                        <p class="tab-links" onclick="opentab('experience')">Erfaring</p>
+                        <p class="tab-links" onclick="opentab('education')">Uddannelse</p>
+                        <p class="tab-links" onclick="opentab('programs')">Programmer</p>
+                    </div>
+                    <!-- ---------------------------- færdigheder -------------- -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Brugergrænseflade Desgin i<br>HTML5/CSS og Figma</li>
+                            <li><span>SoMe</span><br>SoMe Content</li>
+                            <li><span>Grafik</span><br>Grafisk Materiale</li>
+                            <li><span>Web udvikling</span><br>Wordpress</li>
+                        </ul>
+                    </div>
+                    <!-- ---------------------------- erfaring -------------- -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Erhvervs Erfaring</span><br>5 års Smedearbejde hos<br>Jensen DK og<br>Sydhavns Motorværksted</li>
+                            <li><span>SoMe</span><br>SoMe Content hos <br>Bornholms Cykeludlejning</li>
+                            <li><span>Grafik</span><br>Grafisk Materiale hos <br> Bornholms Cykeludlejning</li>
+                        </ul>
+                    </div>
+                    <!-- ---------------------------- uddannelse -------------- -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Eux-klejnsmed<br>2017-2022<br></span><br>Brugergrænseflade Desgin i<br>HTML5/CSS og Figma</li>
+                            <li><span>MMD<br>2023-Nu<br></span><br>Multimedie Design UCL Odense, 1.Sem </li>
+                        </ul>
+                    </div>
+                    <!-- ---------------------------- programmer -------------- -->
+                    <div class="tab-contents" id="programs">
+                        <ul>
+                            <li><span>PS</span><br>Billede redigering</li>
+                            <li><span>AI</span><br>Kontent udvikling og Grafisk design</li>
+                            <li><span>Figma</span><br>Frontend udvikling</li>
+                            <li><span>VS Code</span><br>HTML5 og CSS kodning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------------------------------Design ------------------------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Design</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h1>Web Design</h1>
+                <p>Skradersyet hjemmesider i HTML5 og CSS</p>
+                <a href="#">Se mere</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-figma"></i>
+                <h1>Figma Design</h1>
+                <p>Design af prototyper til<br> website og app</p>
+                <a href="#">Se mere</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-to-square"></i>
+                <h1>Vektor Grafik</h1>
+                <p>Grafisk materiale i Illustrator</p>
+                <a href="#">Se mere</a>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+
+<!-- ------------------------------ projekter ---------------------------- -->
+<div id="projekter">
+    <div class="container">
+        <h1 class="sub-title">Udvalgte Projekter</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images_p3/ny-work-1.png" alt="Telefon med en app">
+                <div class="layer">
+                    <h3>App Design</h3>
+                    <p>Denne app er udviklet i et projekt<br> til "Den Fynske Landsby". <br>Appen er lavet som et koncept til et 
+                        interaktivt spil i Landsbyen.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images_p3/ny-work-2.png" alt="Telefon med vectorgrafik">
+                <div class="layer">
+                    <h3>Vectorgrafik Design</h3>
+                    <p>Disse Vectorgrafikker er lavet til forskellige<br> projekter på uddannelsen.<br>Vektorgrafikken er lavet i både Figma<br> 
+                    og Illustrator og er skalerbare i god opløsning.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images_p3/ny-work-3.png" alt="Re-design af hjemmside">
+                <div class="layer">
+                    <h3>Re-Design af hjemmeside</h3>
+                    <p>Dette Re-Design er et projekt<br> lavet som en studie opgave.<br> Re-designet er i prototype stadie og viser
+                        et koncept <br>som ville kunne bruges ved et evt. Re-Design af en hjemmeside.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Se mere</a>
+    </div>
+</div>
+<!-- -----------------------------Kontakt formular------------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Kontakt</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>fmje62149@edu.ucl.dk</p>
+                <p><i class="fa-solid fa-phone"></i>+45 30 48 42 68</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/frederik-jensen-7a4108204/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            <a href="images_p3/CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Navn" placeholder="Dit Navn" required>
+                    <input type="email" name="Email" placeholder="Din Email" required>
+                    <textarea name="besked" rows="6" placeholder="Din Besked"></textarea>
+                    <button type="send" class="btn btn2">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Frederik. Præsentations Portfolio <i class="fa-regular fa-copyright"></i></p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks) {
+        tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-250px";
+    }
+
+</script>
+
+</body>
+</html>
