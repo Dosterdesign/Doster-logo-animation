@@ -107,8 +107,8 @@
                     <!-- ---------------------------- uddannelse -------------- -->
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>Eux-klejnsmed<br>2017-2022<br></span><br>Brugergrænseflade Desgin i<br>HTML5/CSS og Figma</li>
-                            <li><span>MMD<br>2023-Nu<br></span><br>Multimedie Design UCL Odense, 1.Sem </li>
+                            <li><span>Eux-klejnsmed 2017-2022</span><br>Brugergrænseflade Desgin i<br>HTML5/CSS og Figma</li>
+                            <li><span>MultiMedie Design 2023-Nu</span><br>Multimedie Design UCL Odense, 1.Sem </li>
                         </ul>
                     </div>
                     <!-- ---------------------------- programmer -------------- -->
@@ -188,7 +188,17 @@
                 </div>
             </div>
             <div class="work">
-                <img src="images_p3/ny-work-3.png" alt="Re-design af hjemmside">
+                <img src="images_p3/work-styletile-mobil.svg" alt="Styletile">
+                <div class="layer">
+                    <h3>Styletile</h3>
+                    <p>Dette styletile er benyttet til at visualisere min hjemmside <br> Det giver klienten et indblik i hvordan det visuelle <br> 
+                        kan se ud inden hjemmsiden er lavet.
+                    </p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images_p3/ny-work-3.png" alt="Mangler indhold">
                 <div class="layer">
                     <h3>Re-Design af hjemmeside</h3>
                     <p>Dette Re-Design er et projekt<br> lavet som en studie opgave.<br> Re-designet er i prototype stadie og viser
@@ -198,23 +208,11 @@
                 </div>
             </div>
             <div class="work">
-                <img src="images_p3/ny-work-3.png" alt="Re-design af hjemmside">
+                <img src="images_p3/Logoer.png" alt="Logo desgins">
                 <div class="layer">
-                    <h3>Re-Design af hjemmeside</h3>
-                    <p>Dette Re-Design er et projekt<br> lavet som en studie opgave.<br> Re-designet er i prototype stadie og viser
-                        et koncept <br>som ville kunne bruges ved et evt. Re-Design af en hjemmeside.
+                    <h3>Logo design</h3>
+                    <p>Forskellige logoer lavet i illustrator og photoshop som visualisere ens brand med personlighed.
                     </p>
-                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images_p3/ny-work-3.png" alt="Re-design af hjemmside">
-                <div class="layer">
-                    <h3>Re-Design af hjemmeside</h3>
-                    <p>Dette Re-Design er et projekt<br> lavet som en studie opgave.<br> Re-designet er i prototype stadie og viser
-                        et koncept <br>som ville kunne bruges ved et evt. Re-Design af en hjemmeside.
-                    </p>
-                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -235,11 +233,17 @@
             <a href="images_p3/CV.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
-                    <input type="text" name="Navn" placeholder="Dit Navn" required>
-                    <input type="email" name="Email" placeholder="Din Email" required>
-                    <textarea name="besked" rows="6" placeholder="Din Besked"></textarea>
-                    <button type="submit" class="btn btn2">Send</button>
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <!-- Acces key så formlen virker -->
+                    <input type="hidden" name="access_key" value="4732cb9f-8125-44ff-81df-3451a07db138">
+                
+                    <!-- Form Inputs navne og placeholder attribute -->
+                    <input type="text" name="Navn" required placeholder="Dit Navn">
+                    <input type="email" name="Mail" required placeholder="Din Mail">
+                    <textarea name="Besked" required placeholder="Din Besked"></textarea>
+                    <button class="btn btn2" type="submit">Submit</button>
+                
                 </form>
             </div>
         </div>
@@ -248,7 +252,8 @@
         <p>Copyright Frederik. Præsentations Portfolio <i class="fa-regular fa-copyright"></i></p>
     </div>
 </div>
-
+<!--------------------------------------------------------------- scripts------------------------------------------------>
+<!-- ---script til erfarings bjælke--------->
 <script>
 
     var tablinks = document.getElementsByClassName("tab-links");
@@ -266,6 +271,7 @@
     }
 </script>
 
+<!-- Script til burgermenu (slide funktion)-->
 <script>
 
     var sidemenu = document.getElementById("sidemenu");
@@ -278,6 +284,9 @@
     }
 
 </script>
+
+<!-- Script til kontaktformular -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
 
 </body>
 </html>

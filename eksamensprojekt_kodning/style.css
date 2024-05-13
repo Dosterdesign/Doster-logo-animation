@@ -31,7 +31,8 @@ nav{
     flex-wrap: wrap;
     background-color: #04ADBF;
     border-radius: 20px;
-
+    position: fixed;
+    z-index: 9000;
 }
 
 .logo{
@@ -267,13 +268,12 @@ margin: 10px 0;
 }
 .work-list{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 40px;
-    margin-top: 50px; 
+    margin-top: 50px;
+    justify-content: space-around;
 }
 .work{
     border-radius: 10px;
@@ -281,7 +281,7 @@ margin: 10px 0;
     overflow: hidden;
 }
 .work img{
-    width: 100%;
+    width: 350px;
     display: block;
     transition: transform 0.5s;
 }
