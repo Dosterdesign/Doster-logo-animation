@@ -11,26 +11,24 @@ body{
 background: #011F26;
 color: #f5f5f5;
 }
+#body2{
+    margin: 10%;
+}
 
-/*
+
 #header{
     width: 100%;
-    height: 100vh;
-    background-color: #000;
-}
-*/
-.container{
-    padding: 10px 10%;
 }
 
 nav{
     /*Headerbaren*/
     display: flex;
+    width: 100%;
+    top: 0;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: #04ADBF;
-    border-radius: 20px;
     position: fixed;
     z-index: 9000;
 }
@@ -146,9 +144,8 @@ nav ul li a:hover::after{
 
 /*-----------------om mig--------------------*/
 #about{
-    padding: 80px 0;
+    padding: 90px 0;
     color: #f5f5f5;
-    background-color: #024858;
 }
 .row{
     display: flex;
@@ -217,7 +214,7 @@ margin: 10px 0;
 
 /* ---------------------------------services----------------------------------*/
 #services{
-    padding: 30px 0;
+    padding: 80px 0;
 }
 .services-list{
     display: grid;
@@ -262,9 +259,7 @@ margin: 10px 0;
 
 /*------------------------Udvalgte projekter-------------------------------*/
 #projekter{
-    padding: 50px 0;
-    background-color: #024858;
-    
+    padding: 80px 0;
 }
 .work-list{
     display: flex;
@@ -373,6 +368,11 @@ margin: 10px 0;
     display: inline-block;
     background: #04ADBF;
 }
+
+.btn.btn2:hover{
+    background-color: #B4CBD9;
+    color: #04ADBF;
+}
 /*--kontakt right--*/
 .contact-right form{
     width: 100%;
@@ -388,6 +388,7 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
+
 form .btn2{
     padding: 14px 55px;
     font-size: 18px;
@@ -431,7 +432,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     /*blå menubar (boxen)*/
-    nav ul{
+    nav div{
         background: #04ADBF;
         position: fixed;
         top: 0;
@@ -449,7 +450,7 @@ nav .fa-solid{
         margin: 25px;
     }
     /*luk og åben (burgermenu og kryds) placering og størrelse*/
-    nav ul .fa-solid{
+    nav div .fa-solid{
         position: absolute;
         top: 25px;
         left: 25px;
