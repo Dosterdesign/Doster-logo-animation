@@ -29,6 +29,7 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: #04ADBF;
+    /*--- menubar ruller med ned----*/
     position: fixed;
     z-index: 9000;
 }
@@ -78,13 +79,12 @@ nav ul li a:hover::after{
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
-   
+    margin-bottom: 30px;   
 }
 .header-text h1{
-    font-size: 35px;
+    font-size: 50px;
     font-family: 'Roboto';
-    margin: auto;
+    margin: 0;
 }
 .header-text h2{
     font-size: 30px;
@@ -93,12 +93,13 @@ nav ul li a:hover::after{
     margin-left: auto;
 }
 
-/* Billede af pcskærm forside */
+/* forside */
 .header-text{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     height: 100vh;
+    text-align: center;
 }
 
 .container2{
@@ -106,6 +107,28 @@ nav ul li a:hover::after{
     max-width: 1200px;
     padding: 0 20px;
 }
+h1{
+    margin-bottom: 50px;
+   padding: 0;
+   color: #f5f5f5;
+   /*-webkit-text-stroke: 1px #f5f5f5;*/
+   position: relative;
+   display: inline-block;
+}
+h1::before{
+    content: "DOSTER...DESIGNS";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: #04ADBF;
+    border-right: 2px solid #04ADBF;
+    transition: width 1s ease-in-out;
+}
+h1:hover::before{
+    width: 100%;
+}
+
 
 .row{
     display: flex;
@@ -115,20 +138,22 @@ nav ul li a:hover::after{
 .forside-col-1{
     flex: 1;
     padding-left: 20px;
+    width: 50%;
+    margin-top: 20px;
+}
+.forside-col-1 img{
+    width: 100%;
+    max-width: 600px;
 }
 
 .forside-col-2{
     flex: 1;
+    margin-left: 30px;
+    margin-top: 20px
 }
 
-.forside-col-2 img{
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-}
-
-/* Styling for h1 */
-.forside-col-1 h1{
+/* Styling for h2 */
+.forside-col-2 h2{
     background-color: #04ADBF;
     color: #f5f5f5;
     padding: 20px;
@@ -138,7 +163,7 @@ nav ul li a:hover::after{
 }
 
 /* Styling for p */
-.forside-col-1 p{
+.forside-col-2 p{
     margin-top: 10px;
 }
 
@@ -336,6 +361,9 @@ margin: 10px 0;
 }
 /*-------------------------------kontakt ---------------------------*/
 /*--kontakt left--*/
+#contact{
+    margin-top: 80px;
+}
 .contact-left{
     flex-basis: 35%;
 }
@@ -417,21 +445,33 @@ nav .fa-solid{
 }
 /*responsivt, så alt under 600px følger css nedenunder*/
 @media only screen and (max-width: 600px){
-    .text-box-plakat{
-        flex-basis: 100%;
-    }
+    /*overskrift og forside*/
     .header-text{
-        margin-top: 100%;
+        margin-top: 80px;
         font-size: 16px;
     }
     .header-text h1{
-       font-size: 30px; 
+       font-size: 25px; 
     }
+    .forside-col-1 .forside-col-2{
+        flex-basis: 100%;
+        padding: 0;
+    }
+    .forside-col-1 img{
+    min-width: 100px;
+    margin-bottom: 20px;
+    }
+    .forside-col-2 h2{
+        font-size: 20px;
+    }
+    .forside-col-2 p{
+        font-size: 15px;
+    }
+    /*blå menubar (boxen)*/
     nav .fa-solid{
         display: block;
         font-size: 25px;
     }
-    /*blå menubar (boxen)*/
     nav div{
         background: #04ADBF;
         position: fixed;
@@ -481,5 +521,11 @@ nav .fa-solid{
     .copyright{
         font-size: 13px;
     }
-    /*----------Services---------------*/
+    /*---------- Projekter ---------------*/
+    .work img{
+        width: 250px;
+    }
+    .sub-title{
+        font-size: 30px;
+    }
 }
