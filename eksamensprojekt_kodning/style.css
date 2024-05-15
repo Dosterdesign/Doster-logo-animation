@@ -139,7 +139,7 @@ h1:hover::before{
     flex: 1;
     padding-left: 20px;
     width: 50%;
-    margin-top: 20px;
+    margin-top: 120px;
 }
 .forside-col-1 img{
     width: 100%;
@@ -149,7 +149,7 @@ h1:hover::before{
 .forside-col-2{
     flex: 1;
     margin-left: 30px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 /* Styling for h2 */
@@ -161,9 +161,6 @@ h1:hover::before{
 }
 .forside-col-2 h2 span{
     color: #04ADBF;
-}
-.forside-col-2 img{
-    justify-content: center;
 }
 
 /* Styling for p */
