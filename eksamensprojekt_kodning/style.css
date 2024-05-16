@@ -170,7 +170,7 @@ h1:hover::before{
     background-size: 0%;
 }
 .forside-col-2 h2 span:first-child{
-    animation: textcolor1 3s linear infinite alternate;
+    animation: textcolor1 3s linear forwards 0.5s;
 }
 /* 0% er start. 50% virker som "tids delay" og 100% er slut*/
 @keyframes textcolor1 {
@@ -308,9 +308,58 @@ margin: 10px 0;
     margin-top: 20px;
     display: inline-block;
 }
-.services-list div:hover{
-    background: #B4CBD9;
-    transform: translateY(-10px);
+
+.services-list div a:hover{
+    font-size: 20px;
+}
+/*-------------------Modalbox - pop up besked-------------------*/
+/*placering,baggrund og hidden*/
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, 0.7);
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+}
+/*vises ved klik*/
+.modal:target{
+    visibility: visible;
+    opacity: 1;
+}
+/*selve boksen*/
+.modalcontent{
+    position: relative;
+    background: #04ADBF;
+    color: #f5f5f5;
+    width: 500px;
+    max-width: 90%;
+    padding: 40px 40px;
+    border-radius: 10px;
+}
+/*teksten i kasserne*/
+.modalkasse h4{
+    font-size: 25px;
+}
+.modalkasse p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+/*krydset til at lukke*/
+.modalclose{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 36px;
 }
 
 /*------------------------Udvalgte projekter-------------------------------*/
@@ -400,6 +449,15 @@ margin: 10px 0;
 }
 .contact-right{
     flex-basis: 60%;
+}
+.mitnavn{
+    font-size: 18px;
+}
+.mitnavn i{
+    margin-top: 10px;
+    color: #04ADBF;
+    font-size: 17px;
+    margin-right: 10px;
 }
 .contact-left p{
     margin-top: 30px;
