@@ -141,11 +141,12 @@ h1:hover::before{
     flex: 1;
     padding-left: 20px;
     width: 50%;
-    margin-top: 120px;
+    margin-top: 20px;
 }
 .forside-col-1 img{
-    width: 100%;
-    max-width: 600px;
+    width: 800px;
+    max-width: 900px;
+    margin-left: -150px;
 }
 
 .forside-col-2{
@@ -532,6 +533,28 @@ form .btn2{
 nav .fa-solid{
     display: none;
 }
+@media only screen and (max-width: 1200px){
+    .forside-col-1{
+        flex-basis: 100%;
+        padding: 0;
+        margin-bottom: -150px;
+    }
+    .forside-col-1 img{
+        min-width: 100px;
+        max-width: 700px;
+        margin-bottom: 20px;
+        display: block;
+        justify-content: center;
+        align-self: center;
+        }
+        .forside-col-2 h2{
+            font-size: 23px;
+        }
+        .forside-col-2 p{
+            font-size: 17px;
+        }
+}
+
 /*responsivt, så alt under 600px følger css nedenunder*/
 @media only screen and (max-width: 600px){
     /*overskrift og forside*/
@@ -548,7 +571,11 @@ nav .fa-solid{
     }
     .forside-col-1 img{
     min-width: 100px;
+    max-width: 500px;
     margin-bottom: 20px;
+    display: block;
+    align-self: center;
+    margin-bottom: 45px;
     }
     .forside-col-2 h2{
         font-size: 20px;
